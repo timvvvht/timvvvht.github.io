@@ -109,7 +109,7 @@ input, select, textarea {
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			width: 300px;
 			height: 200px;
-			background-image: url("images/pic03.png");
+			background-image: url("../../images/overlay.jpg");
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -1486,11 +1486,16 @@ input, select, textarea {
 	}
 	.project-header{
 		font-size: larger;
+		font-style: italic;
 		line-height: 1.2;
 		letter-spacing: 0.1em;
 	}
 
+	.project-header:hover{
 
+		color: #3295F2;
+		font-style: italic;
+	}
 	.skills{
 		font-size: 70%;
 		font-style: italic;
@@ -1802,6 +1807,7 @@ input, select, textarea {
 			color: #3a3939;
 			background: #fff;
 			box-shadow: inset 0 0 0 1px #fff;
+			opacity:1;
 		}
 
 			input[type="button"].style2:hover,
@@ -1870,6 +1876,7 @@ input, select, textarea {
 		.box.style1 {
 			background: #fff;
 			padding: 3em;
+			opacity:0.9;
 		}
 
 			.box.style1 .image {
@@ -2113,11 +2120,11 @@ input, select, textarea {
 
 	#banner {
 		position: relative;
-		color: #fff;
+		color: #3a3939;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #21354a url("images/banner.svg") bottom center no-repeat;
-		opacity: 0.9;
+		background: #042253 url("images/banner.svg") bottom center no-repeat;
+		opacity: 0.8;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
@@ -2127,6 +2134,7 @@ input, select, textarea {
 		#banner header {
 			margin: 0 0 2em 0;
 			opacity: 1;
+			color: white;
 		}
 
 			#banner header h2 {
@@ -2134,6 +2142,7 @@ input, select, textarea {
 				font-size: 1.75em;
 				letter-spacing: 8px;
 				opacity: 1;
+				color: white;
 			}
 
 		#banner p {
@@ -2141,6 +2150,7 @@ input, select, textarea {
 			padding: 0px 100px 0px 100px;
 			opacity: 1;
 			margin-bottom: 10px;
+			color: white;
 		}
 
 		#banner footer {
@@ -2381,7 +2391,7 @@ input, select, textarea {
 
 			body {
 				background-color: #203936;
-				background-image: url("images/overlay.jpg"), url("../../images/bg-alt.jpg");
+				background-image: url("../../images/overlay.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
