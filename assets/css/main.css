@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #183026;
+		background-color: #042050;
 		background-image: url("../../images/overlay.jpg");
 		background-repeat: no-repeat;
 		background-size:  cover;
@@ -165,7 +165,7 @@ input, select, textarea {
 		-webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		-ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-		color: #35b88f;
+		color: #264574;
 		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
 		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
@@ -1513,6 +1513,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			opacity: 0.9;
 		}
 
 		.image.featured {
@@ -1524,10 +1525,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
-			opacity: 0.9;
-			transition: transform 2s, filter 1.5s ease-in-out;
-			transform-origin: center center;
-  			filter: contrast(1.25);
+			
 		}
 
 		.image.fit:hover img{
@@ -1640,101 +1638,12 @@ input, select, textarea {
 				margin-left: 0;
 			}
 
-/* Form */
-
-	form label {
-		display: block;
-		margin: 0 0 0.5em 0;
-	}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		-moz-transition: background-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out;
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		background: #f1f1f1;
-		width: 100%;
-		padding: 0.75em;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			background-color: #f8f8f8;
-		}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select {
-		line-height: 1em;
-	}
-
-	form select {
-		background-size: 1.25em;
-		background-repeat: no-repeat;
-		background-position: calc(100% - 1em) center;
-		padding-right: 1.25em;
-		text-overflow: ellipsis;
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%235a5959' /%3E%3C/svg%3E");
-	}
-
-		form select option {
-			color: #3a3939;
-			background: #ffffff;
-		}
-
-		form select:focus::-ms-value {
-			background-color: transparent;
-		}
-
-		form select::-ms-expand {
-			display: none;
-		}
-
-	form textarea {
-		min-height: 12em;
-	}
-
-	form ::-webkit-input-placeholder {
-		color: #5a5959 !important;
-	}
-
-	form :-moz-placeholder {
-		color: #5a5959 !important;
-	}
-
-	form ::-moz-placeholder {
-		color: #5a5959 !important;
-	}
-
-	form :-ms-input-placeholder {
-		color: #5a5959 !important;
-	}
-
-	form ::-moz-focus-inner {
-		border: 0;
-	}
-
-	form ul.actions {
-		margin-bottom: 0;
-		text-align: center;
-	}
 
 /* Table */
 
 	.table-wrapper {
 		width: 100%;
-		overflow-x: auto;
+		overflow-x: scroll;
 		-webkit-overflow-scrolling: touch;
 	}
 
@@ -1796,7 +1705,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #45c89f;
+			background: #264574;
 		}
 
 		input[type="button"].style2,
@@ -1886,7 +1795,7 @@ input, select, textarea {
 				width: 50%;
 				height: 100%;
 				background: #152E33;
-				overflow: hidden;
+				overflow: scroll;
 			}
 
 				.box.style1 .image img {
@@ -2193,9 +2102,8 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: #35b88f;
-				text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
-				border-bottom-color: rgba(53, 184, 143, 0.5);
+				color: #264574;
+				border-bottom-color: #264574;
 			}
 
 		#footer .icons {
@@ -2390,7 +2298,7 @@ input, select, textarea {
 		/* Basic */
 
 			body {
-				background-color: #203936;
+				background-color: #264574;
 				background-image: url("../../images/overlay.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
