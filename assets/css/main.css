@@ -2628,9 +2628,10 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 3em 2em 3em 2em;
-				/* padding: 0em 0em 0em 0em; */
+				/* padding: 3em 2em 3em 2em; */
+				padding: 2em 0em 2em 0em;
 				background-size: auto 100%;
+
 			}
 
 				#banner header {
@@ -2640,6 +2641,7 @@ input, select, textarea {
 					#banner header h2 {
 						font-size: 1.5em;
 						letter-spacing: 1px;
+						padding: 0;
 					}
 
 		/* Footer */
