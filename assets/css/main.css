@@ -1510,6 +1510,7 @@ input, select, textarea {
 	}
 	#bottomtext {
 		padding-bottom: 1.5em;
+		font-size: 16px;
 	}
 
 /* Image */
@@ -2641,6 +2642,9 @@ input, select, textarea {
 					#banner header h2 {
 						font-size: 1.5em;
 						letter-spacing: 1px;
+						padding: 0;
+					}
+					#banner p {
 						padding: 0;
 					}
 
