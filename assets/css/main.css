@@ -2593,7 +2593,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 18em 0 18em 0;
+				padding: 17em 0 18em 0;
 			}
 
 				#header header {
@@ -2631,9 +2631,11 @@ input, select, textarea {
 			#banner {
 				/* padding: 3em 2em 3em 2em; */
 				padding: 2em 0em 2em 0em;
-				background-size: auto 100%;
+				background-size: cover;
 				background-repeat: no-repeat;
-				background-position: center center;
+				background-position: center center fixed;
+				-webkit-background-size: cover;
+
 
 			}
 
