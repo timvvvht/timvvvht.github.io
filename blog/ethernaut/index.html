@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Ethernaut - Smart Contract Vulnerabilities - Tim&#39;s Homepage</title>
+
+  
+  
+  <meta name="description" content="In this series, I go through the solutions of the Ethernaut security challenges posed by OpenZeppelin. I highly recommend going through the entire series of challenges - not only will you gain a hyper-aware intuition of attack vectors in this domain, but also a much deeper understanding of Solidity and the EVM.
+Ethernaut Levels 0 &amp; 1 You can find the full playlist here (work-in-progress)." />
+  <meta name="author" content="tim" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://timvvvht.github.io/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://timvvvht.github.io/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://timvvvht.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/youtube.svg" />
+  
+
+  
+  <link rel="icon" href="https://timvvvht.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://timvvvht.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Ethernaut - Smart Contract Vulnerabilities" />
+<meta property="og:description" content="Exploiting smart contract vulnerabilities - tackling the Ethernaut series" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timvvvht.github.io/blog/ethernaut/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-02T00:00:00+00:00" />
+
+
+  
+  <meta itemprop="name" content="Ethernaut - Smart Contract Vulnerabilities">
+<meta itemprop="description" content="Exploiting smart contract vulnerabilities - tackling the Ethernaut series"><meta itemprop="datePublished" content="2022-07-02T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-07-02T00:00:00+00:00" />
+<meta itemprop="wordCount" content="65">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ethernaut - Smart Contract Vulnerabilities"/>
+<meta name="twitter:description" content="Exploiting smart contract vulnerabilities - tackling the Ethernaut series"/>
+
+  
+  
+</head>
+
+  
+  <body class="not-ready" data-menu="true">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://timvvvht.github.io/">Tim&#39;s Homepage</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+  <nav class="menu">
+    
+    <a class="" href="/about/">About</a>
+    
+    <a class="" href="/blog/">Blog</a>
+    
+    <a class="" href="/post/projects/">Projects</a>
+    
+  </nav>
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/timtim_96"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/timvvvht"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="youtube"
+      style="--url: url(./youtube.svg)"
+      href="https://youtube.com/channel/UCMwTi2tRH83wnYt__92u0pA"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+    
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      
+      <time>Jul 2, 2022</time>
+      
+      
+      <span>tim</span>
+      
+    </p>
+    <h1>Ethernaut - Smart Contract Vulnerabilities</h1>
+  </header>
+  <section class="post-content"><!-- tags = [
+    "solidity",
+    "programming",
+] -->
+<p>In this series, I go through the solutions of the <a href="https://ethernaut.openzeppelin.com/">Ethernaut</a> security challenges posed by OpenZeppelin. I highly recommend going through the entire series of challenges - not only will you gain a hyper-aware intuition of attack vectors in this domain, but also a much deeper understanding of Solidity and the EVM.</p>
+<hr>
+<h2 id="ethernaut-levels-0--1">Ethernaut Levels 0 &amp; 1</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube-nocookie.com/embed/glHFXUY_BDc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br>
+<p>You can find the full playlist <a href="https://www.youtube.com/playlist?list=PLx1B_QnrXTTcRi8pRkeiUytf6jUB7Tzmh">here</a> (work-in-progress).</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://timvvvht.github.io/blog/projects/"><span>←</span><span>What I&#39;ve Built</span></a>
+     
+    <a class="next" href="https://timvvvht.github.io/blog/programming-odyssey/"><span>On the Origins of my Sustained Infatuation with Computation</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2022 <a href="https://timvvvht.github.io/">Tim&#39;s Homepage</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

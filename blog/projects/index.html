@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>What I&#39;ve Built - Tim&#39;s Homepage</title>
+
+  
+  
+  <meta name="description" content="Selected Projects (in reverse chronological order): A prototype of a DeFi interest rates swap platform, which enables users to manage their interest rates risk through trading the yield-bearing portion of their staked positions on the open market, powered by an on-chain central limit order book. Stack: Solidity, Javascript, React, Hardhat, Ethers.js Ariadne1 - a prototype of an AI-augmented legal search engine for legal judgments, with custom score function based on &ldquo;weight-y&rdquo; citations2 and nearest neighbours." />
+  <meta name="author" content="tim" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://timvvvht.github.io/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://timvvvht.github.io/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://timvvvht.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/youtube.svg" />
+  
+
+  
+  <link rel="icon" href="https://timvvvht.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://timvvvht.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="What I&#39;ve Built" />
+<meta property="og:description" content="What I&#39;ve built over the years" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timvvvht.github.io/blog/projects/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-09T00:00:00+00:00" />
+
+
+  
+  <meta itemprop="name" content="What I&#39;ve Built">
+<meta itemprop="description" content="What I&#39;ve built over the years"><meta itemprop="datePublished" content="2022-07-09T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-07-09T00:00:00+00:00" />
+<meta itemprop="wordCount" content="437">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What I&#39;ve Built"/>
+<meta name="twitter:description" content="What I&#39;ve built over the years"/>
+
+  
+  
+</head>
+
+  
+  <body class="not-ready" data-menu="true">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://timvvvht.github.io/">Tim&#39;s Homepage</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+  <nav class="menu">
+    
+    <a class="" href="/about/">About</a>
+    
+    <a class="" href="/blog/">Blog</a>
+    
+    <a class="" href="/post/projects/">Projects</a>
+    
+  </nav>
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/timtim_96"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/timvvvht"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="youtube"
+      style="--url: url(./youtube.svg)"
+      href="https://youtube.com/channel/UCMwTi2tRH83wnYt__92u0pA"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+    
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      
+      <time>Jul 9, 2022</time>
+      
+      
+      <span>tim</span>
+      
+    </p>
+    <h1>What I&#39;ve Built</h1>
+  </header>
+  <section class="post-content"><h3 id="selected-projects-in-reverse-chronological-order">Selected Projects (in reverse chronological order):</h3>
+<ul>
+<li>A prototype of a DeFi interest rates swap platform, which enables users to manage their interest rates risk through trading the yield-bearing portion of their staked positions on the open market, powered by an on-chain central limit order book.
+<ul>
+<li>Stack: Solidity, Javascript, React, Hardhat, Ethers.js</li>
+</ul>
+</li>
+<li>Ariadne<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> - a prototype of an AI-augmented legal search engine for legal judgments, with custom score function based on &ldquo;weight-y&rdquo; citations<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> and nearest neighbours. The intuition was that the parent and child nodes of judgments similar to a specific one are relevant in search.
+<ul>
+<li>Stack: Clojure, Clojurescript, Python, Elasticsearch, PyTorch, Re-Frame</li>
+</ul>
+</li>
+<li><a href="https://github.com/timvvvht/HKEX-Announcement-Classifier">HKEX Announcement Classifer</a> - Training a transformers model to classify different types of disclosure announcements made by public companies listed on the Hong Kong Stock Exchange<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.
+<ul>
+<li>Stack: Python, Tensorflow</li>
+</ul>
+</li>
+<li><a href="https://github.com/timvvvht/FacialRecognition">Facial Recognition with Triplet Loss &amp; KNN</a> - Tinkering with an Xception model trained on the <a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html">CelebA dataset</a> on Google Colab. Implemented a local facial recognition system with OpenCV.
+<ul>
+<li>Stack: Python, Tensorflow, OpenCV</li>
+</ul>
+</li>
+<li><a href="https://github.com/timvvvht/Neural-Networks-and-Optimizers-from-scratch">Neural Networks and Optimizers from Scratch</a> - A neural network written in pure NumPy. I explored how different optimizers behaved on a minimalistic example. I implemented 10 optimizers from their original papers, including RMSprop, Adam, Adamax etc, as well as modifiers such as <a href="https://arxiv.org/pdf/1910.04952v3.pdf">Decaying Momentum (Demon)</a> and <a href="https://arxiv.org/pdf/1711.05101v3.pdf">Decoupled Weight Decay</a>.
+<ul>
+<li>Stack: Python, NumPy</li>
+</ul>
+</li>
+<li><a href="https://github.com/timvvvht/AlphaZero-Connect4">AlphaZero Clone</a> - I replicated the self-play reinforcement learning algorithm as conceptually described in the seminal <a href="https://arxiv.org/abs/1712.01815">AlphaZero paper</a>. This implementation can, given sufficient time and/or computational resources, theoretically learn any two-player board game of arbitrary complexity, so long as the game can be represented as a matrix.
+<ul>
+<li>Stack: Python, Tensorflow</li>
+</ul>
+</li>
+<li><a href="https://github.com/timvvvht/Backtester">Stock Market Backtester</a> - An extensible backtester written with NumPy and Pandas, showcasing Dollar-Cost-Averaging (DCA) and DCA with portfolio rebalancing.
+<ul>
+<li>Stack: Python, NumPy, Pandas</li>
+</ul>
+</li>
+</ul>
+<p><br></br></p>
+<h3 id="courses-and-certificates">Courses and Certificates</h3>
+<ul>
+<li><a href="https://github.com/timvvvht/CS50---Introduction-to-Artificial-Intelligence">CS50 - Introduction to Artificial Intelligence</a> - Course offered by HarvardX on algorithms, machine learning techniques, probabilistic inference, and natural language processing.</li>
+<li><a href="https://github.com/timvvvht/Deep-Learning-Specialization-Coursera-">Deep Learning Specialization</a> - Course offered by Dr. Andrew Ng on deep neural networks, including convolutional networks and sequence models.</li>
+<li><a href="https://github.com/timvvvht/Mathematics-for-Machine-Learning---Coursera---Imperial">Mathematics for Machine Learning</a> - Course offered by Imperial College London on linear algebra, calculus, and dimensionality-reduction techniques.</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>My first attempt at a legal-tech startup, the shortcomings of which will soon be encapsulated in a post.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>The landscape of legal judgments can easily be visualised as a graph. The authority of common law judgments can usually be traced back to a root node.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>I&rsquo;ve since recognized a few limitations of my experiments. The dataset was too small, the representations learned by the neural network were likely to be of low-fidelity, due to truncation. Language models seem to struggle with long-range dependencies.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav class="post-nav">
+     
+    <a class="next" href="https://timvvvht.github.io/blog/ethernaut/"><span>Ethernaut - Smart Contract Vulnerabilities</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2022 <a href="https://timvvvht.github.io/">Tim&#39;s Homepage</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

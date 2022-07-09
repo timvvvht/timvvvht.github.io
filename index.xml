@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tim&#39;s Homepage</title>
+    <link>https://timvvvht.github.io/</link>
+    <description>Recent content on Tim&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2022; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://timvvvht.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I&#39;ve Built</title>
+      <link>https://timvvvht.github.io/blog/projects/</link>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://timvvvht.github.io/blog/projects/</guid>
+      <description>Selected Projects (in reverse chronological order): A prototype of a DeFi interest rates swap platform, which enables users to manage their interest rates risk through trading the yield-bearing portion of their staked positions on the open market, powered by an on-chain central limit order book. Stack: Solidity, Javascript, React, Hardhat, Ethers.js Ariadne1 - a prototype of an AI-augmented legal search engine for legal judgments, with custom score function based on &amp;ldquo;weight-y&amp;rdquo; citations2 and nearest neighbours.</description>
+    </item>
+    
+    <item>
+      <title>Ethernaut - Smart Contract Vulnerabilities</title>
+      <link>https://timvvvht.github.io/blog/ethernaut/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://timvvvht.github.io/blog/ethernaut/</guid>
+      <description>In this series, I go through the solutions of the Ethernaut security challenges posed by OpenZeppelin. I highly recommend going through the entire series of challenges - not only will you gain a hyper-aware intuition of attack vectors in this domain, but also a much deeper understanding of Solidity and the EVM.
+Ethernaut Levels 0 &amp;amp; 1 You can find the full playlist here (work-in-progress).</description>
+    </item>
+    
+    <item>
+      <title>On the Origins of my Sustained Infatuation with Computation</title>
+      <link>https://timvvvht.github.io/blog/programming-odyssey/</link>
+      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://timvvvht.github.io/blog/programming-odyssey/</guid>
+      <description>&amp;ldquo;Surely there is a better way of doing this&amp;rdquo;, I thought to myself, as I scoured the relevant directories for &amp;ldquo;proof&amp;rdquo; (in the form of a blurry jpeg) that X person was a graduate from Y university.
+This was part-and-parcel of the process of legal due diligence, where every material statement necessitated &amp;ldquo;demonstrable evidence&amp;rdquo; - a Herculean yet seemingly Sisyphean task.
+&amp;ldquo;If only there was a way to run a directory-wide &amp;lsquo;command-f&amp;rsquo; on images and scanned PDFs.</description>
+    </item>
+    
+    <item>
+      <title>About ☀️</title>
+      <link>https://timvvvht.github.io/about/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://timvvvht.github.io/about/</guid>
+      <description>Live in the future, then build what&amp;rsquo;s missing. — Paul Graham
+Hi, I&amp;rsquo;m Tim, a self-starter and an absurdly quick learner with a fervent desire to facilitate epoch-defining impact through leveraging the potential of applied Artificial Intelligence and/or building infrastructure for the decentralised economy.
+As an ex-cryptocurrency trader, lawyer, and a self-taught programmer, I have experience working across multiple domains and cognitive modalities, and am capable of rapidly shifting mental frameworks to the task(s) at hand.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://timvvvht.github.io/homepage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timvvvht.github.io/homepage/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
