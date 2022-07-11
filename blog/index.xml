@@ -23,7 +23,8 @@
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://timvvvht.github.io/blog/ethernaut/</guid>
-      <description>In this series, I go through the solutions of the Ethernaut security challenges posed by OpenZeppelin. I highly recommend going through the entire series of challenges - not only will you gain a hyper-aware intuition of attack vectors in this domain, but also a much deeper understanding of Solidity and the EVM.
+      <description>In this series, I go through the solutions of the Ethernaut security challenges posed by OpenZeppelin.
+I highly recommend going through the entire series of challenges - not only will you gain a hyper-aware intuition of attack vectors in this domain, but also a much deeper understanding of Solidity and the EVM.
 Ethernaut Levels 0 &amp;amp; 1 You can find the full playlist here (work-in-progress).</description>
     </item>
     
