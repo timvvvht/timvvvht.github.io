@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>On the Demise of Ariadne - Tim Wu</title>
+
+  
+  
+  <meta name="description" content="In January 2022, I set out to solve a problem in the legal tech space.
+From my stint as a lawyer, I noticed that a frustratingly high amount of time was spent on legal research. I conducted user interviews with numerous lawyers, who uniformly reverberated this sentiment - the existing legal research tools left much to be desired. One of them even told me &ldquo;If a relevant case can&rsquo;t be found by page x, then it doesn&rsquo;t exist&rdquo;." />
+  <meta name="author" content="tim" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://timvvvht.github.io/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://timvvvht.github.io/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://timvvvht.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://timvvvht.github.io/youtube.svg" />
+  
+
+  
+  <link rel="icon" href="https://timvvvht.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://timvvvht.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="On the Demise of Ariadne" />
+<meta property="og:description" content="Ariadne" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timvvvht.github.io/blog/ariadne/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-08-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-08-10T00:00:00+00:00" />
+
+
+  
+  <meta itemprop="name" content="On the Demise of Ariadne">
+<meta itemprop="description" content="Ariadne"><meta itemprop="datePublished" content="2022-08-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-08-10T00:00:00+00:00" />
+<meta itemprop="wordCount" content="990">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="On the Demise of Ariadne"/>
+<meta name="twitter:description" content="Ariadne"/>
+
+  
+  
+</head>
+
+  
+  <body class="not-ready" data-menu="true">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://timvvvht.github.io/">Tim Wu</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+  <nav class="menu">
+    
+    <a class="" href="/about/">About</a>
+    
+    <a class="" href="/blog/">Blog</a>
+    
+    <a class="" href="/blog/projects/">Projects</a>
+    
+  </nav>
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/timtim_96"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/timvvvht"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="youtube"
+      style="--url: url(./youtube.svg)"
+      href="https://youtube.com/channel/UCMwTi2tRH83wnYt__92u0pA"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+    
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      
+      <time>Aug 10, 2022</time>
+      
+      
+      <span>tim</span>
+      
+    </p>
+    <h1>On the Demise of Ariadne</h1>
+  </header>
+  <section class="post-content"><!-- tags = [
+    "solidity",
+    "programming",
+] -->
+<p>In January 2022, I set out to solve a problem in the legal tech space.</p>
+<p>From my stint as a lawyer, I noticed that a frustratingly high amount of time was spent on legal research. I conducted user interviews with numerous lawyers, who uniformly reverberated this sentiment - the existing legal research tools left much to be desired. One of them even told me &ldquo;If a relevant case can&rsquo;t be found by page x, then it doesn&rsquo;t exist&rdquo;. Knowing that the incumbents&rsquo; solutions relied heavily on <a href="https://en.wikipedia.org/wiki/Okapi_BM25">BM25</a>, a decades-old algorithm, and that their natural language search capabilities were lacklustre, I thought I had found a problem space ripe for disruption.</p>
+<h3 id="what-was-ariadne">What was Ariadne?</h3>
+<p>Ariadne was designed to be a search engine for case law, with the relevance scoring function comprised of not only BM25, but also weighted graphs and techniques from the frontier of <a href="https://paperswithcode.com/task/information-retrieval">Information Retrieval</a>. A key intuition was that legal authority was derived from precedents, meaning the landscape of judgments can be mapped naturally as a graph<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. I settled on a bi-encoder reranker with sentences as the atomic unit<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, which made intuitive sense as there should only be a few sentences relevant to a specific query in an arbitrary judgment. A key feature of the product, was the ability to traverse the judgments landscape through node traversal, which allowed users to reach landmark judgments more expediently. Through my rose-tinted glasses, I failed to notice any red flags.</p>
+<h3 id="what-went-wrong">What went wrong?</h3>
+<p>I exuberantly hacked together the prototype - living, breathing, dreaming of Ariadne. I thought that Ariadne was the key to illuminating the way through the treacherous labyrinth of case law. Eventually, I had to test my hypotheses.</p>
+<ul>
+<li>
+<p>Did Ariadne <em>truly</em> provide superior search results?</p>
+</li>
+<li>
+<p>Did the search experience <em>truly</em> increase the productivity of lawyers who relied on legal search engines?</p>
+</li>
+<li>
+<p>Was Ariadne <em>truly</em> a 10x product?</p>
+</li>
+</ul>
+<p>From my subjective experience using my prototype, I felt that the relevance algorithm did manage to produce search results of decent quality. The search experience was delightful (a bit self-congratulatory, yes), and the node traversal feature did allow me to save time on scanning cases for relevant sentences and citations. However, I had no way of scientifically evaluating the search quality in a vacuum. I was also acutely aware of my own biases, as I had built the prototype entirely from scratch, even anthropomorphizing it by giving it a name. The only way of ascertaining the value of the product, was to solicit user feedback.</p>
+<p>I showed the demo of Ariadne to a cohort of lawyers, and had them use it in my presence.</p>
+<p>&ldquo;Where are the case reports?&rdquo;, asked most of them.</p>
+<p>Case reports were commentaries written about a specific sub-domain of law, providing guidance on said domain through providing analyses on cases. I had rarely relied on case reports in the past, leading to my erroneous undervaluation of such information. The importance of case reports did not adhere to my notion of legal research, and my then framework of reality. Furthermore, case reports were not publicly available, as the legal search incumbents had some sort of monopolistic gatekeeping to such data. Needless to say, I had to adjust reality.</p>
+<p>I came to the realization that even if I managed to deliver 10x search quality, Ariadne would still be lacking in a fundamental category of data provided. I had to go back to the drawing board.</p>
+<p>Ariadne, however, was anything but a waste of time. I&rsquo;m still convinced that the legal search space has room for disruption. There <em>is</em> a reason why the incumbents are still using BM25 - it&rsquo;s good enough to solve the problem, it gets the job done.</p>
+<p><br></br></p>
+<h3 id="what-did-i-learn">What did I learn?</h3>
+<ul>
+<li>Importance of <em>Detailed</em> User Interviews
+<ul>
+<li>In hindsight, I should&rsquo;ve conducted user interviews in significantly more breadth and depth. Instead of assuming that users&rsquo; search habits were similar to mine, I should&rsquo;ve acquired more granular understanding of their existing workflows. I also suspect that had I conducted <em>more</em> user interviews, I might&rsquo;ve decided against tackling legal search - an absolute behemoth of a problem. Is it <em>truly</em> a &ldquo;hair on fire&rdquo; problem? Most importantly, I would likely have discovered the prevalance of relying on case reports, which was ultimately the fatal blow to Ariadne.</li>
+</ul>
+</li>
+<li>Avoiding the Seductive Allure of Building
+<ul>
+<li>To an extent, I fell in love with the technical problem of delivering superior search quality, instead of the customer. I became obsessed with applying state-of-the-art Information Retrieval techniques to a problem which had previously caused me pain. I now realize that part of me wanted to prove to myself, that I was capable of building a full stack search engine from scratch - it sounded like a sufficiently complex (technical) problem to solve and I was fascinated by the practical applications of Natural Language Processing.</li>
+</ul>
+</li>
+<li>Necessity of having a Co-founder
+<ul>
+<li>I don&rsquo;t think it&rsquo;s controversial to assert that having a co-founder drastically increases the odds of success. At the very least, it would increase the speed of iteration by more than 2x, and I would not have been stuck in an echo chamber of my presuppositions about the market and the problem.</li>
+</ul>
+</li>
+</ul>
+<p>A lesson worth the price paid. Having performed backpropagation on the flaws on my previous approach, I&rsquo;m eager to attempt my next shot on goal. Such mistakes will not be repeated, I&rsquo;m sure of it - I&rsquo;m now in a much better position to start my next venture thanks to Ariadne. But first, let me find a co-founder.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Case x cites cases y and z. Cases y and z would be the parent nodes of case x. Through recursive traversal, the root nodes would be identified - usually they are landmark judgments, containing the declaration of key legal principles therein.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>A cross-encoder architecture would have been ideal, as cross-encoder rerankers dominated the Information Retrieval benchmarks. However, given my lack of access to GPU compute and the theoretical increase in latency, I decided against it.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav class="post-nav">
+     
+    <a class="next" href="https://timvvvht.github.io/blog/projects/"><span>What I&#39;ve Built</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2022 <a href="https://timvvvht.github.io/">Tim Wu</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

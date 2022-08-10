@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2022; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://timvvvht.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://timvvvht.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On the Demise of Ariadne</title>
+      <link>https://timvvvht.github.io/blog/ariadne/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://timvvvht.github.io/blog/ariadne/</guid>
+      <description>In January 2022, I set out to solve a problem in the legal tech space.
+From my stint as a lawyer, I noticed that a frustratingly high amount of time was spent on legal research. I conducted user interviews with numerous lawyers, who uniformly reverberated this sentiment - the existing legal research tools left much to be desired. One of them even told me &amp;ldquo;If a relevant case can&amp;rsquo;t be found by page x, then it doesn&amp;rsquo;t exist&amp;rdquo;.</description>
+    </item>
+    
     <item>
       <title>What I&#39;ve Built</title>
       <link>https://timvvvht.github.io/blog/projects/</link>
