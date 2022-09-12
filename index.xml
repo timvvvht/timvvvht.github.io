@@ -9,12 +9,12 @@
     <copyright>Copyright © 2022; all rights reserved.</copyright>
     <lastBuildDate>Mon, 12 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://timvvvht.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Preparing for EF: f(priors, inputs) -&gt; ideas</title>
+      <title>f(priors, inputs) -&gt; ideas</title>
       <link>https://timvvvht.github.io/blog/ideas/</link>
       <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://timvvvht.github.io/blog/ideas/</guid>
-      <description>If ideas are a function of priors and inputs, then it is paramount to (i) reduce reliance on priors; and/or (ii) increase quantity / quality of inputs.
+      <description>Novel Ideas If ideas are a function of priors and inputs, then it is paramount to (i) reduce reliance on priors; and/or (ii) increase quantity / quality of inputs.
 If people are vessels through which ideas propagate, then it is essential to be connected to the &amp;ldquo;right&amp;rdquo; set of nodes.
 Pre-EF Having spoken with a pretty representative sample of the upcoming LD19 cohort at Entrepreneur First, I am astonished by the sheer amount of talent, ambition, and drive emanating from these individuals.</description>
     </item>
@@ -30,26 +30,6 @@ From my stint as a lawyer, I noticed that a frustratingly high amount of time wa
     </item>
     
     <item>
-      <title>What I&#39;ve Built</title>
-      <link>https://timvvvht.github.io/blog/projects/</link>
-      <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://timvvvht.github.io/blog/projects/</guid>
-      <description>Selected Projects (in reverse chronological order): A prototype of a DeFi interest rates swap platform, which enables users to manage their interest rates risk through trading the yield-bearing portion of their staked positions on the open market, powered by an on-chain central limit order book. Stack: Solidity, Javascript, React, Hardhat, Ethers.js Ariadne1 - a prototype of an AI-augmented legal search engine for legal judgments, with custom score function based on &amp;ldquo;weight-y&amp;rdquo; citations2 and nearest neighbours.</description>
-    </item>
-    
-    <item>
-      <title>Ethernaut - Smart Contract Vulnerabilities</title>
-      <link>https://timvvvht.github.io/blog/ethernaut/</link>
-      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://timvvvht.github.io/blog/ethernaut/</guid>
-      <description>In this series, I go through the solutions of the Ethernaut security challenges posed by OpenZeppelin.
-I highly recommend going through the entire series of challenges - not only will you gain a hyper-aware intuition of attack vectors in this domain, but also a much deeper understanding of Solidity and the EVM.
-Ethernaut Levels 0 &amp;amp; 1 You can find the full playlist here (work-in-progress).</description>
-    </item>
-    
-    <item>
       <title>On the Origins of my Sustained Infatuation with Computation</title>
       <link>https://timvvvht.github.io/blog/programming-odyssey/</link>
       <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
@@ -58,6 +38,15 @@ Ethernaut Levels 0 &amp;amp; 1 You can find the full playlist here (work-in-prog
       <description>&amp;ldquo;Surely there must be a better way of doing this&amp;rdquo;, I thought to myself, as I scoured the relevant directories for &amp;ldquo;proof&amp;rdquo; (in the form of a blurry jpeg) that X person was a graduate from Y university.
 This was part-and-parcel of the process of legal due diligence, where every material statement necessitated &amp;ldquo;demonstrable evidence&amp;rdquo; - a Herculean yet seemingly Sisyphean task.
 &amp;ldquo;If only there was a way to run a directory-wide &amp;lsquo;command-f&amp;rsquo; on images and scanned PDFs.</description>
+    </item>
+    
+    <item>
+      <title>What I&#39;ve Built</title>
+      <link>https://timvvvht.github.io/blog/projects/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://timvvvht.github.io/blog/projects/</guid>
+      <description>Selected Projects (in reverse chronological order): A prototype of a DeFi interest rates swap platform, which enables users to manage their interest rates risk through trading the yield-bearing portion of their staked positions on the open market, powered by an on-chain central limit order book. Stack: Solidity, Javascript, React, Hardhat, Ethers.js Ariadne1 - a prototype of an AI-augmented legal search engine for legal judgments, with custom score function based on &amp;ldquo;weight-y&amp;rdquo; citations2 and nearest neighbours.</description>
     </item>
     
     <item>
